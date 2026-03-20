@@ -14,3 +14,15 @@ To extract this information, I used the tool `exiftool`, which allows you to vie
 
 Command used: exiftool WindowsXP_1551719014755.jpg
 ![Exiftool Output](screenshots/outcome_exiftool.png)
+
+## 🔎 Step 2 - Username Investigation
+
+From the metadata, I noticed a copyright name: **OWoodflint**, which looked like a possible username.
+I started by searching it on Google to see if anything would come up. Very quickly, I found both an X (Twitter) account and a GitHub profile with the same name.
+
+I opened the X account first, and it immediately helped me answer the first question of the challenge: the user’s avatar is a cat.
+
+While exploring the profile, I also found another useful piece of information. The user mentioned having free WiFi and shared a BSSID.
+I used a website like **wigle.net** to search for this BSSID. By doing an advanced search, I was able to find its location in London, and also discovered that the SSID was **UnileverWiFi**.
+
+With this, I was able to answer two questions and move on to the next one: finding the user’s email address.
