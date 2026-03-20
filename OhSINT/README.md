@@ -13,3 +13,4 @@ I started by downloading the image provided in the challenge and analyzing it, s
 To extract this information, I used the tool `exiftool`, which allows you to view metadata stored inside files.
 
 Command used: exiftool WindowsXP_1551719014755.jpg
+![Exiftool Output](screenshots/outcome_exiftool.png)
