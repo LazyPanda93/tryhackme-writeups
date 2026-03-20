@@ -30,3 +30,36 @@ I used a website like **wigle.net** to search for this BSSID. By doing an advanc
 ![Wigle Result](screenshots/advance_wigle_BSSID_SSID.png)
 
 With this, I was able to answer two questions and move on to the next one: finding the user’s email address.
+
+## 🔐 Step 3 - Finding the Email and Password
+
+I went back to my search and opened the GitHub profile I had found earlier. It contained more useful information.
+From there, I was able to confirm that the user is from London. Even though I already had an idea from the BSSID lookup.
+The GitHub profile also revealed an email address, which allowed me to answer another question. In addition, there was a link to a WordPress blog.
+
+After opening the blog, I discovered the full name of the user: **Oliver Woodflint**. The page also mentioned that he was currently in New York, which answered the question about where he had gone on holiday.
+
+![WordPress Blog](screenshots/oliver_holiday_proof.png)
+
+At this point, the only remaining question was the password.
+To find the password, I decided to inspect the source code of the website.
+
+At first, I tried a quick approach by using `Ctrl + F` to search for common keywords such as "password", "login", "admin", and similar terms that might reveal something useful. However, this didn’t return any results.
+
+Since that didn’t work, I then started going through the source code manually, carefully checking different sections.
+
+After going back and forward through the code for a while, I finally noticed something unusual, a line of text with a color style set to `#ffffff`, which is white. Because the website background is also white, this made the text invisible on the page.
+
+Looking closer, I realized that this hidden text was actually the password, cleverly disguised using CSS.
+
+![Hidden Password in Source Code](screenshots/passw_proof.png)
+
+## ✅ Conclusion
+
+This room was a really good introduction to OSINT and how information can be gathered from different public sources.
+
+While working through the challenge, I realized how small details like metadata or a username can lead to much bigger findings when combined together.
+
+As this is my first write-ups, it also helped me understand the importance of taking a structured approach and paying attention to every detail, even when something doesn’t seem useful at first.
+
+Overall, this challenge showed me how powerful simple techniques can be, and how important it is to stay patient and curious during an investigation.
